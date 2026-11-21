@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DARK ACADEMY | GENERAL BASHAR_116</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+@keyframes rainbow{0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(360deg)}}
+@keyframes glowPulse{0%,100%{box-shadow:0 0 20px #a855f7,0 0 40px #ec4899}50%{box-shadow:0 0 30px #22d3ee,0 0 60px #a855f7}}
+@keyframes gradMove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes shine{0%{transform:translateX(-100%)}100%{transform:translateX(200%)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes floatCode{0%{transform:translateY(-20px);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(20px);opacity:0}}
+body{background:#050008;color:#fff;text-align:center;overflow-x:hidden}
+#matrix{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;opacity:.25;pointer-events:none}
+.top,.hero,.sec,.contact,.footer-wrap{position:relative;z-index:2}
+.top{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:linear-gradient(90deg,#a855f7,#ec4899,#22d3ee,#22c55e,#a855f7);background-size:300% 300%;animation:gradMove 5s linear infinite, rainbow 8s linear infinite}
+.pill{background:#000;padding:6px 12px;border-radius:50px;font-size:13px;color:#fff;border:2px solid #fff;box-shadow:0 0 15px #fff}
+.logo{font-size:22px;font-weight:900;color:#fff;text-shadow:0 0 10px #fff,0 0 20px #a855f7}
+.hero{padding:30px 16px;background:radial-gradient(circle at 50% 0%,#3a0a6a,#050008 70%);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;top:0;left:-50%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);animation:shine 3s linear infinite}
+.avatar{width:150px;height:150px;margin:auto;border:3px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:70px;background:linear-gradient(135deg,#a855f7,#ec4899,#22d3ee);background-size:300% 300%;animation:gradMove 4s linear infinite, glowPulse 2s ease-in-out infinite;position:relative;z-index:2}
+h1{font-size:27px;margin-top:16px;background:linear-gradient(90deg,#ff0000,#ffcc00,#22c55e,#22d3ee,#a855f7,#ec4899);background-size:300% 300%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradMove 3s linear infinite}
+.sub{color:#22c55e;font-size:14px;margin-top:6px;text-shadow:0 0 10px #22c55e}
+.big{font-size:52px;font-weight:900;line-height:1.2;margin:14px 0 6px;background:linear-gradient(90deg,#a855f7,#ec4899,#22d3ee,#ffcc00);background-size:300% 300%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradMove 3s linear infinite}
+.desc{color:#fff;line-height:1.9;font-size:15px;max-width:520px;margin:auto;background:rgba(0,0,0,.7);border:2px solid transparent;border-image:linear-gradient(90deg,#a855f7,#ec4899,#22d3ee) 1;padding:14px;border-radius:16px;animation:rainbow 6s linear infinite}
+/* نافذة الهاكر */
+.hacker{max-width:520px;margin:14px auto 0;background:#000;border:2px solid #00ff00;border-radius:12px;overflow:hidden;text-align:left;direction:ltr;box-shadow:0 0 25px #00ff00;min-height:105px}
+.hacker-top{background:#111;padding:8px 10px;display:flex;gap:6px;align-items:center}
+.dot{width:10px;height:10px;border-radius:50%}
+.hacker-body{padding:10px 12px;font-family:monospace;font-size:12.5px;line-height:1.8;color:#00ff00;white-space:pre-line;min-height:70px}
+.cursor{display:inline-block;width:8px;height:14px;background:#00ff00;animation:blink 1s infinite;vertical-align:middle}
+.float-code{position:fixed;z-index:1;background:rgba(0,0,0,.85);border:1px solid #00ff00;color:#00ff00;font-family:monospace;font-size:11px;padding:8px 10px;border-radius:8px;direction:ltr;text-align:left;animation:floatCode 5s ease-in-out forwards;pointer-events:none;box-shadow:0 0 15px #00ff00}
+.btn{display:block;max-width:520px;margin:12px auto;padding:16px;border-radius:16px;font-weight:900;text-decoration:none;font-size:17px;position:relative;overflow:hidden}
+.b1{background:linear-gradient(90deg,#a855f7,#ec4899,#22d3ee);background-size:300% 300%;color:#fff;animation:gradMove 3s linear infinite, glowPulse 2s infinite}
+.b2{background:linear-gradient(90deg,#22c55e,#22d3ee,#a855f7);background-size:300% 300%;color:#fff;animation:gradMove 3s linear infinite}
+.count{background:#12001f;border:2px solid #ffcc00;border-radius:12px;max-width:520px;margin:10px auto;padding:12px;font-size:14px;box-shadow:0 0 20px #ffcc00}
+.count b{color:#ffcc00;font-size:20px}
+.sec{padding:18px 14px;max-width:560px;margin:auto;text-align:right}
+.sec h2{font-size:22px;margin-bottom:12px;text-align:center;background:linear-gradient(90deg,#a855f7,#ec4899,#22d3ee);background-size:300% 300%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradMove 3s linear infinite}
+.card{background:rgba(0,0,0,.7);border:2px solid #a855f7;border-radius:18px;padding:16px;margin-bottom:12px;animation:rainbow 8s linear infinite;box-shadow:0 0 20px rgba(168,85,247,.5)}
+.card b{font-size:16px;color:#fff}.card p{color:#ddd;font-size:13px;line-height:1.7;margin-top:4px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mini{background:rgba(0,0,0,.7);border:2px solid #ec4899;border-radius:18px;padding:16px;animation:rainbow 7s linear infinite}.mini b{font-size:22px;color:#fff}.mini p{font-size:12px;color:#ddd;margin-top:4px}
+.rev{background:rgba(0,0,0,.7);border:2px solid #22d3ee;border-radius:18px;padding:16px;margin-bottom:10px;text-align:right;box-shadow:0 0 15px #22d3ee}.rev b{color:#ffcc00}.rev p{color:#fff;font-size:13px;line-height:1.7;margin-top:5px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:560px;margin:auto;padding:0 14px}
+.cbtn{display:block;padding:14px;border-radius:14px;text-decoration:none;color:#fff;font-weight:900;font-size:14px;background:linear-gradient(90deg,#a855f7,#ec4899,#22d3ee,#22c55e);background-size:300% 300%;animation:gradMove 4s linear infinite, glowPulse 3s infinite;border:1px solid #fff}
+.wide{grid-column:1/-1}
+.footer{color:#aaa;font-size:11px;padding:18px;line-height:1.8}
+</style>
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div class="top"><div class="pill">👑 GENERAL BASHAR_116</div><div class="logo">DARK ACADEMY ✨</div></div>
+<div class="hero">
+<div class="avatar">🧑‍💻</div>
+<h1>GENERAL BASHAR_116</h1>
+<div class="sub">✓ مدرب SOC معتمد - خبرة عملية في غرف العمليات</div>
+<div class="big">SOC دبلومة<br>من الصفر للشغل</div>
+<p class="desc">مش كورس نظري وخلاص. هتتعلم تشتغل SOC Analyst بجد، تمسك حوادث حقيقية، تحلل هجمات، وترد عليها زي المحترفين. وتطلع جاهز تشتغل في أي شركة.</p>
+
+<div class="hacker">
+<div class="hacker-top"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span style="color:#aaa;font-size:11px;margin-left:6px">root@dark-academy: ~/SOC</span></div>
+<div class="hacker-body" id="typed"></div>
+</div>
+
+<a class="btn b1" href="https://wa.me/201006446968?text=اهلا%20يا%20جنرال%20عايز%20احجز%20في%20دبلومة%20SOC">🚀 احجز مكانك الآن - العدد محدود ✨</a>
+<a class="btn b2" href="https://wa.me/201006446968">💬 كلم الجنرال على واتساب</a>
+<div class="count">الأماكن المتبقية: <b id="left">7</b> من 20 فقط - الحجز بيخلص بسرعة 🔥</div>
+</div>
+
+<div class="sec"><h2>هتتعلم ايه في الدبلومة؟ ✨</h2>
+<div class="card"><b>1. أساسيات SOC والشبكات</b><p>يعني ايه SOC، وغرفة العمليات بتشتغل ازاي، وازاي تراقب الشبكة صح.</p></div>
+<div class="card"><b>2. تحليل الحوادث Incident Response</b><p>تمسك حادث حقيقي، تحلله، وتكتب تقرير زي اللي بيتقدم في الشركات.</p></div>
+<div class="card"><b>3. SIEM - Splunk & ELK</b><p>هتشتغل بايدك على أدوات المراقبة اللي الشركات بتطلبها.</p></div>
+<div class="card"><b>4. تحليل هجمات حقيقية</b><p>Phishing, Malware, Brute Force - هتشوف الهجمة وتفهمها وتوقفها.</p></div>
+<div class="card"><b>5. مشروع التخرج + CV</b><p>هتطلع بمشروع حقيقي تحطه في الـ CV، ونجهزك للانترفيو.</p></div>
+</div>
+
+<div class="sec"><h2>ليه DARK ACADEMY؟ ✨</h2>
+<div class="grid">
+<div class="mini"><b>+40 ساعة</b><p>تدريب عملي مباشر</p></div>
+<div class="mini"><b>100% عملي</b><p>مفيش حشو نظري</p></div>
+<div class="mini"><b>شهادة</b><p>شهادة إتمام + مشروع</p></div>
+<div class="mini"><b>دعم</b><p>متابعة مع الجنرال بنفسه</p></div>
+</div></div>
+
+<div class="sec"><h2>آراء الطلاب ✨</h2>
+<div class="rev"><b>★★★★★ أحمد - القاهرة</b><p>"كنت صفر، بعد الدبلومة بقيت فاهم يعني ايه SOC وبقيت اعرف احلل حادث لوحدي."</p></div>
+<div class="rev"><b>★★★★★ مريم - اسكندرية</b><p>"الشرح عملي مش نظري، والجنرال بيتابع بنفسه، احسن قرار خدته."</p></div>
+</div>
+
+<div class="sec"><h2>تواصل مع الجنرال ✨</h2></div>
+<div class="contact">
+<a class="cbtn" href="https://wa.me/201006446968">📱 واتساب<br>كلم الجنرال</a>
+<a class="cbtn" href="https://www.facebook.com/100041412964606">📘 فيسبوك<br>General.Bashar</a>
+<a class="cbtn" href="https://www.instagram.com/desert_prisoner_">📸 انستجرام<br>@desert_prisoner_</a>
+<a class="cbtn" href="https://www.threads.com/@desert_prisoner_">🧵 ثريدز<br>@desert_prisoner_</a>
+<a class="cbtn wide" href="mailto:bsharalmslmy13@gmail.com">📧 ايميل<br>تواصل بالايميل</a>
+</div>
+
+<div class="hero footer-wrap" style="padding-top:10px">
+<a class="btn b1" href="https://wa.me/201006446968?text=اهلا%20يا%20جنرال%20عايز%20احجز%20في%20دبلومة%20SOC">🚀 احجز مكانك دلوقتي ✨</a>
+<div class="footer">© 2026 - DARK ACADEMY | GENERAL BASHAR_116<br>بشار المسلمي - مدرب SOC</div>
+</div>
+<script>
+// Matrix rain
+const c=document.getElementById('matrix');const ctx=c.getContext('2d');c.width=window.innerWidth;c.height=window.innerHeight;
+const chars="01ABCDEF$#@<>/\\|{}[]";const drops=[];const fs=14;const cols=Math.floor(c.width/fs);
+for(let i=0;i<cols;i++) drops[i]=Math.random()*50;
+setInterval(()=>{ctx.fillStyle="rgba(5,0,8,0.08)";ctx.fillRect(0,0,c.width,c.height);ctx.fillStyle="#00ff00";ctx.font=fs+"px monospace";for(let i=0;i<cols;i++){const t=chars[Math.floor(Math.random()*chars.length)];ctx.fillText(t,i*fs,drops[i]*fs);if(drops[i]*fs>c.height&&Math.random()>0.975) drops[i]=0;drops[i]++;}},50);
+// Typing hacker terminal
+const lines=["> nmap -sV target.com\n[+] Port 443 OPEN - HTTPS\n[+] Threat Detected... Analyzing...","> whoami\nroot@dark-academy","> splunk search: attack detected\n[+] Incident Blocked by SOC ✅","> python exploit.py --run\n[+] Access Granted... Just Kidding 😎\n[+] You are now SOC Analyst"];
+let li=0;function typeLine(){const el=document.getElementById('typed');el.innerHTML=lines[li]+" <span class='cursor'></span>";li=(li+1)%lines.length;}
+typeLine();setInterval(typeLine,3500);
+// Floating codes
+const codes=["if (attack) { block(); }","sudo ./hack --start","SELECT * FROM logs WHERE threat='high'","while(true){ monitor(); }","alert('HACK DETECTED')","ping 192.168.1.1 -t"];
+setInterval(()=>{const d=document.createElement('div');d.className='float-code';d.innerText=codes[Math.floor(Math.random()*codes.length)];d.style.top=(Math.random()*70+10)+"%";d.style.left=(Math.random()*60+5)+"%";document.body.appendChild(d);setTimeout(()=>d.remove(),5000);},6000);
+// Counter
+let n=7;setInterval(()=>{if(n>3){n--;document.getElementById('left').innerText=n}},8000);
+</script>
+</body>
+</html>
